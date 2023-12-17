@@ -1,0 +1,14 @@
+html {
+    background-color: pink;
+    background-image: url("cupcakebg.jpg");
+}
+
+body {
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: aquamarine;
+    font-weight: bold;
+}

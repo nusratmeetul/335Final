@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Place Order</title>
+    <link rel=“stylesheet” href=“webpage.css”>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+    <h1>Application</h1>
+    <div class="applicationBigBox">
+        <form action="/insert" method="post" onsubmit="return confirmSubmit()">            
+            <fieldset>
+                <label>Name: <input type="text" id="name" name="name"></label>
+                <label>Email Address: <input type="text" id="email" name="email"></label>
+                <br><br>
+                <label>Number of Cupcakes: <input type="number" id="num" name="num"></label>
+                <br><br>
+                <label>Additional Information: <textarea id="bginfo" name="bginfo"></textarea></label>
+            </fieldset>
+    </div>
+
+        <br>
+        <div class="g-recaptcha" data-sitekey="6LdF7zMpAAAAAKEo2iXrfvof2vPy0g2fdO8tElpq"></div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit Application</button>
+        </form>
+
+        <script src="script.js"></script>
+    <hr>
+
+    <script>
+        function confirmSubmit() {
+            return window.confirm("Are you sure you want to submit the application?");
+        }
+    </script>
+
+    <br>
+    <br>
+    <a href="/">HOME</a>
+
+</body>
+
+</html>
